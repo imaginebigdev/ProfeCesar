@@ -10,6 +10,7 @@ import Services4 from "../../components/Services4/services4";
 import AboutUs4 from "../../components/About-us4/about-us4";
 import WorksStyle3 from "../../components/Works-style3/works-style3";
 import FullTestimonials from "../../components/Full-testimonials/full-testimonials";
+import Video2 from "../../components/Video2/video2";
 
 const Homepage1 = () => {
   const fixedSlider = React.useRef(null);
@@ -46,13 +47,7 @@ const Homepage1 = () => {
       <Navbar nr={navbarRef} lr={logoRef} />
       <IntroWithSlider sliderRef={fixedSlider} />
       <div ref={MainContent} className="main-content">
-        <Services4 />
-        <AboutUs4 />
-        <Numbers />
         <WorksStyle3 />
-        <FullTestimonials />
-        <Blogs2 />
-        <CallToAction img="/img/patrn1.png" />
         <Footer />
       </div>
     </LightTheme>
