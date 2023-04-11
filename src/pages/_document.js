@@ -13,16 +13,10 @@ class MyDocument extends Document {
       <Html lang="en">
         <Head>
           <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
-          <meta
-            name="keywords"
-            content="HTML5 Template Vie onepage themeforest"
-          />
-          <meta
-            name="description"
-            content="Vie - Onepage Multi-Purpose HTML5 Template"
-          />
+          <meta name="keywords" content="Sitio Oficial del Profe Cesar" />
+          <meta name="description" content="Sitio Oficial del Profe Cesar" />
           <meta name="author" content="" />
-          <link rel="shortcut icon" href="/img/favicon.ico" />
+          <link rel="shortcut icon" href="/img/logoprofe.png" />
           <link
             href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap"
             rel="stylesheet"
