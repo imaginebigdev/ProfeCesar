@@ -72,7 +72,7 @@ html {
 
 body {
   color: #fff;
-  background: #111215;
+  background: #808080;
   line-height: 1.5;
   font-weight: 400;
   overflow-x: hidden !important;
@@ -97,6 +97,7 @@ h1 {
 
 h2 {
   font-size: 40px;
+  color: #69FE46;
 }
 
 h3 {
@@ -109,6 +110,7 @@ h4 {
 
 h5 {
   font-size: 25px;
+  color: #69FE46;
 }
 
 h6 {
@@ -157,13 +159,13 @@ span:hover {
     linear,
     left top,
     right top,
-    from(#12c2e9),
-    color-stop(#c471ed),
-    to(#f64f59)
+    from(#69FE46),
+    color-stop(#69FE46),
+    to(#808080)
   );
-  background: -webkit-linear-gradient(left, #12c2e9, #c471ed, #f64f59);
-  background: -o-linear-gradient(left, #12c2e9, #c471ed, #f64f59);
-  background: linear-gradient(to right, #12c2e9, #c471ed, #f64f59);
+  background: -webkit-linear-gradient(left, #69FE46, #69FE46, #808080);
+  background: -o-linear-gradient(left, #69FE46, #69FE46, #808080);
+  background: linear-gradient(to right, #69FE46, #69FE46, #808080);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -173,13 +175,13 @@ span:hover {
     linear,
     left top,
     right top,
-    from(#12c2e9),
-    color-stop(#c471ed),
-    to(#f64f59)
+    from(#69FE46),
+    color-stop(#69FE46),
+    to(#808080)
   );
-  background: -webkit-linear-gradient(left, #12c2e9, #c471ed, #f64f59);
-  background: -o-linear-gradient(left, #12c2e9, #c471ed, #f64f59);
-  background: linear-gradient(to right, #12c2e9, #c471ed, #f64f59);
+  background: -webkit-linear-gradient(left, #69FE46, #69FE46, #808080);
+  background: -o-linear-gradient(left, #69FE46, #69FE46, #808080);
+  background: linear-gradient(to right, #69FE46, #69FE46, #808080);
 }
 
 .line {
@@ -190,13 +192,13 @@ span:hover {
     linear,
     left top,
     right top,
-    from(#12c2e9),
-    color-stop(#c471ed),
-    to(#f64f59)
+    from(#69FE46),
+    color-stop(#69FE46),
+    to(#808080)
   );
-  background: -webkit-linear-gradient(left, #12c2e9, #c471ed, #f64f59);
-  background: -o-linear-gradient(left, #12c2e9, #c471ed, #f64f59);
-  background: linear-gradient(to right, #12c2e9, #c471ed, #f64f59);
+  background: -webkit-linear-gradient(left, #69FE46, #69FE46, #808080);
+  background: -o-linear-gradient(left, #69FE46, #69FE46, #808080);
+  background: linear-gradient(to right, #69FE46, #69FE46, #808080);
 }
 
 .line.top {
@@ -264,7 +266,7 @@ span:hover {
 }
 
 .bg-gray {
-  background-color: #f8f4f3;
+  background-color: rgb(128, 128, 128);
 }
 
 .bg-gray .primery-shadow {
@@ -273,7 +275,7 @@ span:hover {
 }
 
 .bg-dark {
-  background-color: #141414 !important;
+  background-color: rgb(128, 128, 128) !important;
 }
 
 .bg-dark .primery-shadow {
@@ -282,7 +284,7 @@ span:hover {
 }
 
 .bg-color {
-  background-color: #12c2e9 !important;
+  background-color: rgb(128, 128, 128) !important;
 }
 
 .bg-color .primery-shadow {
@@ -291,7 +293,7 @@ span:hover {
 }
 
 .sub-bg {
-  background: #18191d;
+  background: rgb(128, 128, 128);
 }
 
 .bg-img {
@@ -1034,18 +1036,18 @@ span:hover {
   right: 100%;
   height: 100%;
   width: 100%;
-  background: #12c2e9;
+  background: rgb(128, 128, 128);
   background: -webkit-gradient(
     linear,
     left top,
     right top,
-    from(#12c2e9),
-    color-stop(#c471ed),
-    to(#f64f59)
+    from(#69FE46),
+    color-stop(#69FE46),
+    to(#808080)
   );
-  background: -webkit-linear-gradient(left, #12c2e9, #c471ed, #f64f59);
-  background: -o-linear-gradient(left, #12c2e9, #c471ed, #f64f59);
-  background: linear-gradient(to right, #12c2e9, #c471ed, #f64f59);
+  background: -webkit-linear-gradient(left, #69FE46, #69FE46, #808080);
+  background: -o-linear-gradient(left, #69FE46, #69FE46, #808080);
+  background: linear-gradient(to right, #69FE46, #69FE46, #808080);
 }
 
 .pace.pace-inactive {
@@ -1072,7 +1074,7 @@ span:hover {
   left: 0;
   height: 50%;
   width: 100%;
-  background: #252531;
+  background: rgb(128, 128, 128);
   -webkit-transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
   -o-transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
   transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
@@ -1294,7 +1296,7 @@ span:hover {
   width: 6px;
   height: 6px;
   z-index: 10000001;
-  background-color: #12c2e9;
+  background-color: #69FE46;
   -webkit-transition: width 0.3s ease-in-out, height 0.3s ease-in-out,
     margin 0.3s ease-in-out, opacity 0.3s ease-in-out;
   -o-transition: width 0.3s ease-in-out, height 0.3s ease-in-out,
@@ -1308,7 +1310,7 @@ span:hover {
   margin-top: -35px;
   width: 70px;
   height: 70px;
-  background-color: #12c2e9;
+  background-color: #69FE46;
   opacity: 0.3;
 }
 
@@ -1317,7 +1319,7 @@ span:hover {
   margin-top: -12px;
   width: 30px;
   height: 30px;
-  border: 1px solid #12c2e9;
+  border: 1px solid #69FE46;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   z-index: 10000000;
@@ -1369,7 +1371,7 @@ span:hover {
   line-height: 44px;
   font-size: 13px;
   font-weight: 900;
-  color: #12c2e9;
+  color: #69FE46;
   left: 0;
   top: 0;
   height: 44px;
@@ -1387,7 +1389,7 @@ span:hover {
 }
 
 .progress-wrap svg.progress-circle path {
-  stroke: #12c2e9;
+  stroke: #69FE46;
   stroke-width: 4;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -1467,11 +1469,11 @@ span:hover {
 }
 
 [data-overlay-dark]:before {
-  background: #121319;
+  background: grey;
 }
 
 [data-overlay-light]:before {
-  background: #fff;
+  background: rgb(128, 128, 128);
 }
 
 [data-overlay-dark] h1,
@@ -1536,7 +1538,7 @@ span:hover {
 
 [data-overlay-dark="6"]:before,
 [data-overlay-light="6"]:before {
-  opacity: 0.6;
+  opacity: 0.0;
 }
 
 [data-overlay-dark="7"]:before,
@@ -1643,7 +1645,7 @@ span:hover {
   content: "";
   width: 45%;
   height: 100%;
-  background: rgba(255, 255, 255, 0.03);
+  background: rgb(128, 128, 128);
   position: absolute;
   left: 0;
   top: 0;
@@ -1681,8 +1683,8 @@ span:hover {
 }
 
 .butn.light {
-  background: #fff;
-  color: #333;
+  background: #808080;
+  color: #69FE46;
 }
 
 .butn.light:hover {
@@ -1775,7 +1777,7 @@ span:hover {
 .navbar .navbar-nav .nav-link {
   font-size: 12px;
   font-weight: 500;
-  color: #fff;
+  color: #69FE46;
   padding: 15px 7px;
   margin: 10px 15px;
 }
@@ -1904,12 +1906,12 @@ span:hover {
 }
 
 .navbar .logo {
-  width: 50px;
+  width: 300px;
 }
 
 .nav-scroll {
-  background: #1b1d21;
-  border-color: #333538;
+  background: #808080;
+  border-color: #33353800;
   padding: 0;
   position: fixed;
   top: -80px;
@@ -2265,7 +2267,7 @@ span:hover {
 /* ====================== [ End navbar ] ====================== */
 /* ====================== [ Start Slider ] ====================== */
 .slider {
-  position: relative;
+  position: fixed;
 }
 
 .slider.fixed-slider {
@@ -2597,7 +2599,7 @@ span:hover {
   text-align: center;
   border-radius: 50%;
   border: 1px solid rgba(255, 255, 255, 0.05);
-  color: #fff;
+  color: #69FE46;
   font-size: 13px;
 }
 
@@ -5206,7 +5208,7 @@ span:hover {
 }
 
 .po-arch .filtering span.active {
-  color: #b19777;
+  color: #69FE46;
 }
 
 .po-arch .filtering span:after {
@@ -8070,7 +8072,7 @@ footer .item li .sm-post p {
 
 footer .item li .sm-post .date {
   font-size: 12px;
-  color: #12c2e9;
+  color: #69FE46;
 }
 
 footer .item li .subscribe {
@@ -8106,7 +8108,7 @@ footer .item .logo {
 }
 
 footer .item .logo img {
-  width: 50px;
+  width: 250px;
 }
 
 footer .item .social a {
@@ -8132,7 +8134,7 @@ footer .item .copy-right p {
 }
 
 footer .item .copy-right p a {
-  color: #12c2e9;
+  color: #69FE46;
 }
 
 /* ====================== [ End Footer ] ====================== */
@@ -8229,13 +8231,13 @@ footer .item .copy-right p a {
   }
 
   .navbar {
-    min-height: 60px;
+    min-height: 120px;
   }
 
   .navbar .navbar-collapse {
     max-height: 340px;
     overflow: auto;
-    background: #11141b;
+    background: #808080a2;
     text-align: center;
     display: block !important;
     opacity: 0;
@@ -8635,7 +8637,7 @@ footer .item .copy-right p a {
   }
 
   .navbar .logo {
-    width: 40px;
+    width: 180px;
   }
 
   .hamenu .menu-links .main-menu > li {

@@ -1,10 +1,10 @@
 import React from "react";
-import HomePage from "./homepage/home6-light";
+import Homepage1 from "./homepage";
 
 const Home = () => {
   return (
     <>
-      <HomePage />
+      <Homepage1 />
     </>
   );
 };

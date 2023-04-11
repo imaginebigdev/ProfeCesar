@@ -11,28 +11,21 @@ const Footer = ({ hideBGCOLOR }) => {
           <div className="col-lg-4">
             <div className="item md-mb50">
               <div className="title">
-                <h5>Contact Us</h5>
+                <h5>Contactáme</h5>
               </div>
               <ul>
                 <li>
-                  <span className="icon pe-7s-map-marker"></span>
-                  <div className="cont">
-                    <h6>Officeal Address</h6>
-                    <p>504 White St . Dawsonville, GA 30534 , New York</p>
-                  </div>
-                </li>
-                <li>
                   <span className="icon pe-7s-mail"></span>
                   <div className="cont">
-                    <h6>Email Us</h6>
-                    <p>support@gmail.com</p>
+                    <h6>Email</h6>
+                    <p>elprofecesar.com@gmail.com</p>
                   </div>
                 </li>
                 <li>
                   <span className="icon pe-7s-call"></span>
                   <div className="cont">
-                    <h6>Call Us</h6>
-                    <p>+87986451666</p>
+                    <h6>Telefóno</h6>
+                    <p>+123456789</p>
                   </div>
                 </li>
               </ul>
@@ -41,61 +34,49 @@ const Footer = ({ hideBGCOLOR }) => {
           <div className="col-lg-4">
             <div className="item md-mb50">
               <div className="title">
-                <h5>Recent News</h5>
+                <h5>Participaciones</h5>
               </div>
               <ul>
                 <li>
                   <div className="img">
-                    <Link href="/blog-details/blog-details-dark">
-                      <a>
-                        <img src="/img/blog/1.jpg" alt="" />
+                    <Link href="https://deportesalternativos.com/argentina/enda-y-congreso-2022-confirmados/">
+                      <a target="_blank" rel="noreferrer">
+                        <img src="/img/blog/eventos.jpg" alt="" />
                       </a>
                     </Link>
                   </div>
                   <div className="sm-post">
-                    <Link href="/blog-details/blog-details-dark">
-                      <a>
-                        <p>
-                          The Start-Up Ultimate Guide to Make Your WordPress
-                          Journal.
-                        </p>
+                    <Link href="https://deportesalternativos.com/argentina/enda-y-congreso-2022-confirmados/">
+                      <a target="_blank" rel="noreferrer">
+                        <p>Del 25 al 27 de noviembre 16° edición del ENDA.</p>
                       </a>
                     </Link>
-                    <Link href="/blog/blog-dark">
-                      <a>
-                        <span className="date">14 sep 2022</span>
+                    <Link href="https://deportesalternativos.com/argentina/enda-y-congreso-2022-confirmados/">
+                      <a target="_blank" rel="noreferrer">
+                        <span className="date">25 nov 2022</span>
                       </a>
                     </Link>
                   </div>
                 </li>
                 <li>
                   <div className="img">
-                    <Link href="/blog-details/blog-details-dark">
-                      <a>
-                        <img src="/img/blog/2.jpg" alt="" />
+                    <Link href="https://deportesalternativos.com/argentina/">
+                      <a target="_blank" rel="noreferrer">
+                        <img src="/img/blog/deportes.jpg" alt="" />
                       </a>
                     </Link>
                   </div>
                   <div className="sm-post">
-                    <Link href="/blog-details/blog-details-dark">
-                      <a>
-                        <p>
-                          The Start-Up Ultimate Guide to Make Your WordPress
-                          Journal.
-                        </p>
+                    <Link href="https://deportesalternativos.com/argentina/">
+                      <a target="_blank" rel="noreferrer">
+                        <p>Beneficios de practicar deportes alternativos.</p>
                       </a>
                     </Link>
-                    <Link href="/blog/blog-dark">
-                      <a>
-                        <span className="date">14 sep 2022</span>
+                    <Link href="https://deportesalternativos.com/argentina/">
+                      <a target="_blank" rel="noreferrer">
+                        <span className="date">20 abril 2023</span>
                       </a>
                     </Link>
-                  </div>
-                </li>
-                <li>
-                  <div className="subscribe">
-                    <input type="text" placeholder="Type Your Email" />
-                    <span className="subs pe-7s-paper-plane"></span>
                   </div>
                 </li>
               </ul>
@@ -107,27 +88,24 @@ const Footer = ({ hideBGCOLOR }) => {
                 <img src={appData.lightLogo} alt="" />
               </div>
               <div className="social">
-                <a href="#0">
+                <a href="https://www.facebook.com/elementoqi">
                   <i className="fab fa-facebook-f"></i>
                 </a>
-                <a href="#0">
-                  <i className="fab fa-twitter"></i>
-                </a>
-                <a href="#0">
+                <a href="https://www.instagram.com/cesarllaneselementoqi/">
                   <i className="fab fa-instagram"></i>
                 </a>
-                <a href="#0">
+                <a href="https://www.youtube.com/channel/UC4GuOIvk0LaeXPCnNr2adQg">
                   <i className="fab fa-youtube"></i>
                 </a>
               </div>
               <div className="copy-right">
                 <p>
-                  © 2022, Vie Template. Made with passion by
-                  <Link
-                    href="https://themeforest.net/user/themescamp/portfolio"
-                    
-                  >
-                    <a target="_blank">ThemesCamp</a>
+                  © 2023, AMERICA CONSTRUCCIONES. MADE WITH PASSION BY{" "}
+                  <Link href="https://imaginebig.dev">
+                    <a target="_blank" rel="noreferrer">
+                      {" "}
+                      Imagine Big
+                    </a>
                   </Link>
                   .
                 </p>

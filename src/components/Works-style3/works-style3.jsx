@@ -3,65 +3,66 @@ import React from "react";
 import Link from "next/link";
 import initIsotope from "../../common/initIsotope";
 import ModalVideo from "react-modal-video";
+import PageHeader from "../Page-header/page-header";
 
 const WorksStyle3 = () => {
   const [isOpen, setOpen] = React.useState(false);
+  const [videos, setVideos] = React.useState([
+    { id: "rAKqLt0PH8g" },
+    { id: "kXfZMB92E0Q" },
+    { id: "W3JWRVIBveI" },
+    { id: "bSwLXAYF8TU" },
+  ]);
+  const [currentVideo, setCurrentVideo] = React.useState("");
+
   React.useEffect(() => {
     console.clear();
   }, []);
+
   React.useEffect(() => {
     setTimeout(() => {
       initIsotope();
     }, 1000);
   }, []);
+
+  const openVideo = (videoId) => {
+    setCurrentVideo(videoId);
+    setOpen(true);
+  };
+
+  const closeVideo = () => {
+    setCurrentVideo("");
+    setOpen(false);
+  };
+
   return (
     <section className="portfolio-cr section-padding pb-50">
       <div className="container">
+        <div className="sec-head  text-center">
+          <h2 className="wow fadeIn" data-wow-delay=".3s">
+            Videos
+          </h2>
+        </div>
         <div className="row">
           <div className="gallery-mons full-width">
             <div className="items graphic wow fadeInUp" data-wow-delay=".4s">
               <div className="item-img">
                 <img
-                  src="/img/portfolio/cr/1.jpg"
+                  src="/img/portfolio/cr/cesar01.jpg"
                   alt="image"
-                  onClick={(e) => {
-                    e.preventDefault();
-                    setOpen(true);
-                  }}
+                  onClick={() => openVideo(videos[0].id)}
                   style={{ cursor: "pointer" }}
                 />
-                {typeof window !== "undefined" && (
-                  <ModalVideo
-                    channel="youtube"
-                    autoplay
-                    isOpen={isOpen}
-                    videoId="link"
-                    onClose={() => setOpen(false)}
-                  />
-                )}
               </div>
             </div>
-
             <div className="items web brand wow fadeInUp" data-wow-delay=".4s">
               <div className="item-img">
                 <img
-                  src="/img/portfolio/cr/2.jpg"
+                  src="/img/portfolio/cr/cesar02.jpg"
                   alt="image"
-                  onClick={(e) => {
-                    e.preventDefault();
-                    setOpen(true);
-                  }}
+                  onClick={() => openVideo(videos[1].id)}
                   style={{ cursor: "pointer" }}
                 />
-                {typeof window !== "undefined" && (
-                  <ModalVideo
-                    channel="youtube"
-                    autoplay
-                    isOpen={isOpen}
-                    videoId="link"
-                    onClose={() => setOpen(false)}
-                  />
-                )}
               </div>
             </div>
 
@@ -71,23 +72,11 @@ const WorksStyle3 = () => {
             >
               <div className="item-img">
                 <img
-                  src="/img/portfolio/cr/3.jpg"
+                  src="/img/portfolio/cr/cesar03.jpg"
                   alt="image"
-                  onClick={(e) => {
-                    e.preventDefault();
-                    setOpen(true);
-                  }}
+                  onClick={() => openVideo(videos[2].id)}
                   style={{ cursor: "pointer" }}
                 />
-                {typeof window !== "undefined" && (
-                  <ModalVideo
-                    channel="youtube"
-                    autoplay
-                    isOpen={isOpen}
-                    videoId="link"
-                    onClose={() => setOpen(false)}
-                  />
-                )}
               </div>
             </div>
 
@@ -97,28 +86,25 @@ const WorksStyle3 = () => {
             >
               <div className="item-img">
                 <img
-                  src="/img/portfolio/cr/4.jpg"
+                  src="/img/portfolio/cr/cesar04.jpg"
                   alt="image"
-                  onClick={(e) => {
-                    e.preventDefault();
-                    setOpen(true);
-                  }}
+                  onClick={() => openVideo(videos[3].id)}
                   style={{ cursor: "pointer" }}
                 />
-                {typeof window !== "undefined" && (
-                  <ModalVideo
-                    channel="youtube"
-                    autoplay
-                    isOpen={isOpen}
-                    videoId="link"
-                    onClose={() => setOpen(false)}
-                  />
-                )}
               </div>
             </div>
           </div>
         </div>
       </div>
+      {typeof window !== "undefined" && (
+        <ModalVideo
+          channel="youtube"
+          autoplay
+          isOpen={isOpen}
+          videoId={currentVideo}
+          onClose={closeVideo}
+        />
+      )}
     </section>
   );
 };
