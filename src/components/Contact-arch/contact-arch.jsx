@@ -1,30 +1,83 @@
-import React from "react";
+import React, { useState } from "react";
 import { Formik, Form, Field } from "formik";
+import emailjs from "@emailjs/browser";
 
 const ContactArch = () => {
   const messageRef = React.useRef(null);
-  function validateEmail(value) {
-    let error;
-    if (!value) {
-      error = "Required";
-    } else if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(value)) {
-      error = "Invalid email address";
+
+  const [errors, setErrors] = useState({
+    email: "",
+  });
+
+  const [input, setInput] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
+
+  const validador = (inputs) => {
+    let validations = {};
+    const emailExpresion =
+      /^[-\w.%+]{1,64}@(?:[A-Z0-9-]{1,63}\.){1,125}[A-Z]{2,63}$/i;
+    if (!inputs.email) {
+      validations.email = "Debe ingresar su email";
+    } else if (!emailExpresion.test(inputs.email)) {
+      validations.email = "Ingrese un email válido";
     }
-    return error;
-  }
-  const sendMessage = (ms) => new Promise((r) => setTimeout(r, ms));
+    return validations;
+  };
+
+  const handleOnChange = (e) => {
+    setInput({
+      ...input,
+      [e.target.name]: e.target.value,
+    });
+    const errores = validador({ ...input, [e.target.name]: e.target.value });
+    setErrors(errores);
+  };
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+    emailjs
+      .sendForm(
+        "service_ak96apr",
+        "template_rly7zvk",
+        e.target,
+        "JYCeWTWm2NZUbNSlo"
+      )
+      .then((res) => {
+        console.log(res),
+          (error) => {
+            console.log(error);
+          };
+      });
+
+    messageRef.current.innerText =
+      "Su mensaje fue enviado correctamente. Nos estaremos contactando con usted a la brevedad.";
+
+    setTimeout(() => {
+      messageRef.current.innerText = "";
+    }, 3000);
+
+    setInput({
+      name: "",
+      email: "",
+      message: "",
+    });
+  };
+
   return (
     <section
       id="contact-arch"
       className="contact-sec style2 section-padding position-re bg-img"
-      style={{ backgroundImage: "url(/img/patrn1.png)" }}
+      style={{ backgroundImage: "" }}
     >
       <div className="container">
         <div className="row justify-content-center">
           <div className="col-lg-8 col-md-10">
             <div className="sec-head  text-center">
               <h2 className="wow fadeIn" data-wow-delay=".3s">
-                Contact Us
+                Contáctame
               </h2>
             </div>
           </div>
@@ -32,89 +85,67 @@ const ContactArch = () => {
         <div className="row justify-content-center">
           <div className="col-lg-10">
             <div className="form wow fadeInUp" data-wow-delay=".5s">
-              <Formik
-                initialValues={{
-                  name: "",
-                  email: "",
-                  message: "",
-                }}
-                onSubmit={async (values) => {
-                  await sendMessage(500);
-                  alert(JSON.stringify(values, null, 2));
-                  // show message
+              <Formik>
+                <Form onSubmit={sendEmail} autoComplete="off" id="contact-form">
+                  <div className="messages" ref={messageRef}></div>
+                  <br />
 
-                  messageRef.current.innerText =
-                    "Your Message has been successfully sent. I will contact you soon.";
-                  // Reset the values
-                  values.name = "";
-                  values.email = "";
-                  values.message = "";
-                  // clear message
-                  setTimeout(() => {
-                    messageRef.current.innerText = "";
-                  }, 2000);
-                }}
-              >
-                {({ errors, touched }) => (
-                  <Form id="contact-form">
-                    <div className="messages" ref={messageRef}></div>
-                    <br />
+                  <div className="controls">
+                    <div className="row">
+                      <div className="col-lg-6">
+                        <div className="form-group">
+                          <Field
+                            id="form_name"
+                            type="text"
+                            name="name"
+                            value={input.name}
+                            placeholder="Nombre Completo"
+                            required="required"
+                            onChange={(e) => handleOnChange(e)}
+                          />
+                        </div>
+                      </div>
+                      <div className="col-lg-6">
+                        <div className="form-group">
+                          <Field
+                            id="form_email"
+                            type="email"
+                            name="email"
+                            placeholder="Email"
+                            onChange={(e) => handleOnChange(e)}
+                            value={input.email}
+                          />
+                          {errors.email ? <div>{errors.email}</div> : null}
+                        </div>
+                      </div>
 
-                    <div className="controls">
-                      <div className="row">
-                        <div className="col-lg-6">
-                          <div className="form-group">
-                            <Field
-                              id="form_name"
-                              type="text"
-                              name="name"
-                              placeholder="Name"
-                              required="required"
-                            />
-                          </div>
+                      <div className="col-12">
+                        <div className="form-group">
+                          <Field
+                            as="textarea"
+                            id="form_message"
+                            name="message"
+                            placeholder="Mensaje"
+                            rows="4"
+                            required="required"
+                            onChange={(e) => handleOnChange(e)}
+                            value={input.message}
+                          />
                         </div>
-                        <div className="col-lg-6">
-                          <div className="form-group">
-                            <Field
-                              validate={validateEmail}
-                              id="form_email"
-                              type="email"
-                              name="email"
-                              placeholder="Email"
-                              required="required"
-                            />
-                            {errors.email && touched.email && (
-                              <div>{errors.email}</div>
-                            )}
-                          </div>
-                        </div>
-
-                        <div className="col-12">
-                          <div className="form-group">
-                            <Field
-                              as="textarea"
-                              id="form_message"
-                              name="message"
-                              placeholder="Message"
-                              rows="4"
-                              required="required"
-                            />
-                          </div>
-                        </div>
-                        <div className="col-12">
-                          <div className="text-center">
-                            <button
-                              type="submit"
-                              className="nb butn light mt-30 full-width"
-                            >
-                              <span className="ls3 text-u">Send Massege</span>
-                            </button>
-                          </div>
+                      </div>
+                      <div className="col-12">
+                        <div className="text-center">
+                          <button
+                            type="submit"
+                            className="nb butn light mt-30 full-width"
+                          >
+                            <span className="ls3 text-u">Enviar Mensaje</span>
+                          </button>
                         </div>
                       </div>
                     </div>
-                  </Form>
-                )}
+                  </div>
+                </Form>
               </Formik>
             </div>
           </div>

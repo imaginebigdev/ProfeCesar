@@ -1,26 +1,21 @@
-/* eslint-disable @next/next/no-html-link-for-pages */
-/* eslint-disable @next/next/no-img-element */
 import React from "react";
 import { Link } from "react-scroll";
 import appData from "../../data/app.json";
 import { handleDropdown, handleMobileDropdown } from "../../common/navbar";
 
 const NavbarArch = ({ navbarRef, theme }) => {
-  
   return (
     <nav className="navbar navbar-expand-lg" ref={navbarRef}>
       <div className="container">
-        <a className="logo" href="/">
-          {theme ? (
-            theme === "themeL" ? (
-              <img src={appData.darkLogo} alt="logo" />
-            ) : (
-              <img src={appData.lightLogo} alt="logo" />
-            )
-          ) : (
-            <img src={appData.lightLogo} alt="logo" />
-          )}
-        </a>
+        <Link to="/">
+          <a className="">
+            <img
+              src={appData.lightLogo}
+              alt="logo"
+              style={{ width: "300px" }}
+            />
+          </a>
+        </Link>
 
         <button
           className="navbar-toggler"
@@ -39,64 +34,21 @@ const NavbarArch = ({ navbarRef, theme }) => {
 
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav ml-auto">
-            <li className="nav-item dropdown" onClick={handleDropdown}>
-              <span
-                className="nav-link dropdown-toggle"
-                data-toggle="dropdown"
-                data-scroll-nav="0"
+            <li className="nav-item dropdown">
+              <Link
+                className="nav-link"
+                spy={true}
+                onClick={() =>
+                  window.scrollTo({
+                    top: 0,
+                    behavior: "smooth",
+                  })
+                }
+                offset={50}
+                duration={500}
               >
-                Home
-              </span>
-              <div className="dropdown-menu">
-                <a
-                  className="dropdown-item"
-                  href={`/homepage/home1-dark`}
-                >
-                  Main Home
-                </a>
-                <a
-                  className="dropdown-item"
-                  href={`/homepage/home2-dark`}
-                >
-                  Creative Agency
-                </a>
-                <a
-                  className="dropdown-item"
-                  href={`/homepage/home5-dark`}
-                >
-                  Digital Agency
-                </a>
-                <a
-                  className="dropdown-item"
-                  href={`/homepage/home4-dark`}
-                >
-                  Business One Page
-                </a>
-                <a
-                  className="dropdown-item"
-                  href={`/homepage/home3-dark`}
-                >
-                  Corporate Business
-                </a>
-                <a
-                  className="dropdown-item"
-                  href={`/homepage/home6-dark`}
-                >
-                  Modern Agency
-                </a>
-                <a
-                  className="dropdown-item"
-                  href={`/homepage/home7-dark`}
-                >
-                  Freelancer
-                </a>
-                <a
-                  className="dropdown-item"
-                  href={`/homepage/home8-dark`}
-                >
-                  Architecture
-                </a>
-              </div>
+                Inicio
+              </Link>
             </li>
 
             <li className="nav-item">
@@ -108,7 +60,19 @@ const NavbarArch = ({ navbarRef, theme }) => {
                 offset={50}
                 duration={500}
               >
-                About
+                Sobre mi
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link
+                className="nav-link"
+                to="portfolio-cr section-padding pb-50"
+                spy={true}
+                smooth={true}
+                offset={50}
+                duration={500}
+              >
+                Videos
               </Link>
             </li>
             <li className="nav-item">
@@ -120,43 +84,7 @@ const NavbarArch = ({ navbarRef, theme }) => {
                 offset={50}
                 duration={500}
               >
-                Works
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link
-                className="nav-link"
-                to="team-arch"
-                spy={true}
-                smooth={true}
-                offset={50}
-                duration={500}
-              >
-                Team
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link
-                className="nav-link"
-                to="testimonials-arch"
-                spy={true}
-                smooth={true}
-                offset={50}
-                duration={500}
-              >
-                Testimonials
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link
-                className="nav-link"
-                to="blog-arch"
-                spy={true}
-                smooth={true}
-                offset={50}
-                duration={500}
-              >
-                Blog
+                Participaciones
               </Link>
             </li>
             <li className="nav-item">
@@ -168,7 +96,7 @@ const NavbarArch = ({ navbarRef, theme }) => {
                 offset={50}
                 duration={500}
               >
-                Contact
+                Contacto
               </Link>
             </li>
           </ul>
