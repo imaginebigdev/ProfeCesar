@@ -4,6 +4,7 @@ import Link from "next/link";
 import initIsotope from "../../common/initIsotope";
 import ModalVideo from "react-modal-video";
 import PageHeader from "../Page-header/page-header";
+import Video2 from "../Video2/video2";
 
 const WorksStyle3 = () => {
   const [isOpen, setOpen] = React.useState(false);
@@ -47,22 +48,38 @@ const WorksStyle3 = () => {
           <div className="gallery-mons full-width">
             <div className="items graphic wow fadeInUp" data-wow-delay=".4s">
               <div className="item-img">
-                <img
-                  src="/img/portfolio/cr/cesar01.jpg"
-                  alt="image"
-                  onClick={() => openVideo(videos[0].id)}
-                  style={{ cursor: "pointer" }}
-                />
+                <a
+                  className="vid valign"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    setOpen(true);
+                  }}
+                >
+                  <img
+                    src="/img/portfolio/cr/cesar01.jpg"
+                    alt="image"
+                    onClick={() => openVideo(videos[0].id)}
+                    style={{ cursor: "pointer" }}
+                  />
+                </a>
               </div>
             </div>
             <div className="items web brand wow fadeInUp" data-wow-delay=".4s">
               <div className="item-img">
-                <img
-                  src="/img/portfolio/cr/cesar02.jpg"
-                  alt="image"
-                  onClick={() => openVideo(videos[1].id)}
-                  style={{ cursor: "pointer" }}
-                />
+                <a
+                  className="vid valign"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    setOpen(true);
+                  }}
+                >
+                  <img
+                    src="/img/portfolio/cr/cesar02.jpg"
+                    alt="image"
+                    onClick={() => openVideo(videos[1].id)}
+                    style={{ cursor: "pointer" }}
+                  />
+                </a>
               </div>
             </div>
 
@@ -71,12 +88,20 @@ const WorksStyle3 = () => {
               data-wow-delay=".4s"
             >
               <div className="item-img">
-                <img
-                  src="/img/portfolio/cr/cesar03.jpg"
-                  alt="image"
-                  onClick={() => openVideo(videos[2].id)}
-                  style={{ cursor: "pointer" }}
-                />
+                <a
+                  className="vid valign"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    setOpen(true);
+                  }}
+                >
+                  <img
+                    src="/img/portfolio/cr/cesar03.jpg"
+                    alt="image"
+                    onClick={() => openVideo(videos[2].id)}
+                    style={{ cursor: "pointer" }}
+                  />
+                </a>
               </div>
             </div>
 
@@ -85,12 +110,20 @@ const WorksStyle3 = () => {
               data-wow-delay=".4s"
             >
               <div className="item-img">
-                <img
-                  src="/img/portfolio/cr/cesar04.jpg"
-                  alt="image"
-                  onClick={() => openVideo(videos[3].id)}
-                  style={{ cursor: "pointer" }}
-                />
+                <a
+                  className="vid valign"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    setOpen(true);
+                  }}
+                >
+                  <img
+                    src="/img/portfolio/cr/cesar04.jpg"
+                    alt="image"
+                    onClick={() => openVideo(videos[3].id)}
+                    style={{ cursor: "pointer" }}
+                  />
+                </a>
               </div>
             </div>
           </div>
