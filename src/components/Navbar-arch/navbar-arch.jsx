@@ -7,15 +7,13 @@ const NavbarArch = ({ navbarRef, theme }) => {
   return (
     <nav className="navbar navbar-expand-lg" ref={navbarRef}>
       <div className="container">
-        <Link to="/">
-          <a className="">
-            <img
-              src={appData.lightLogo}
-              alt="logo"
-              style={{ width: "300px", marginLeft: "20px", marginTop: "20px" }}
-            />
-          </a>
-        </Link>
+        <a className="">
+          <img
+            src={appData.lightLogo}
+            alt="logo"
+            style={{ width: "300px", marginLeft: "20px", marginTop: "20px" }}
+          />
+        </a>
 
         <button
           className="navbar-toggler"
