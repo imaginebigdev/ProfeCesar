@@ -7,7 +7,7 @@ const Projects = () => {
     youth: true,
     sports: false,
     security: false,
-    urbanism: false,
+    teraphy: false,
   });
   React.useEffect(() => {
     setTimeout(() => {
@@ -19,7 +19,7 @@ const Projects = () => {
     <section
       className="portfolio po-arch section-padding pb-70"
       id="po-arch"
-      style={{ marginBottom: "70vh" }}
+      style={{ minHeight: "100vh" }}
     >
       <div className="container">
         <div className="row justify-content-center">
@@ -28,11 +28,12 @@ const Projects = () => {
               <h2
                 style={{
                   color: "#69FE46",
+                  fontSize: "50px",
                 }}
                 className="wow fadeIn"
                 data-wow-delay=".3s"
               >
-                Participaciones
+                Proyectos
               </h2>
             </div>
           </div>
@@ -82,6 +83,19 @@ const Projects = () => {
               >
                 Elemento Qi
               </span>
+              <span
+                value="security"
+                onClick={() =>
+                  setSection({
+                    youth: false,
+                    sports: false,
+                    security: false,
+                    teraphy: true,
+                  })
+                }
+              >
+                Terapia Fisica
+              </span>
             </div>
           </div>
 
@@ -111,22 +125,21 @@ const Projects = () => {
                         Deportes Alternativos
                       </h4>
                       <p className="wow txt wow fadeIn" data-splitting>
-                        Un balón, diferentes usos. Alternativas. Construimos si
-                        no tenemos. Reemplazamos, adaptamos. Nos adaptamos a los
-                        elementos, el entorno y las personas. Practicar deportes
-                        alternativos ofrece numerosos beneficios para la salud
-                        física y mental. Estos deportes implican un alto grado
-                        de movimiento y coordinación, lo que ayuda a mejorar la
-                        flexibilidad, la agilidad y la coordinación. Además,
-                        estos deportes suelen realizarse al aire libre, lo que
-                        proporciona una mayor exposición a la luz solar y la
-                        vitamina D, lo que favorece la salud ósea y el sistema
-                        inmunológico. Por otro lado, los deportes alternativos
-                        también tienen beneficios para la salud mental. Al ser
-                        actividades lúdicas y creativas, ayudan a reducir el
-                        estrés y la ansiedad, mejoran la autoestima y la
-                        confianza en uno mismo, y fomentan el trabajo en equipo
-                        y la socialización.
+                        Gestiono superviso y elaboro proyectos de deportes
+                        alternativos. Practicar deportes alternativos ofrece
+                        numerosos beneficios para la salud física y mental.
+                        Estos deportes implican un alto grado de movimiento y
+                        coordinación, lo que ayuda a mejorar la flexibilidad, la
+                        agilidad y la coordinación. Además, estos deportes
+                        suelen realizarse al aire libre, lo que proporciona una
+                        mayor exposición a la luz solar y la vitamina D, lo que
+                        favorece la salud ósea y el sistema inmunológico. Por
+                        otro lado, los deportes alternativos también tienen
+                        beneficios para la salud mental. Al ser actividades
+                        lúdicas y creativas, ayudan a reducir el estrés y la
+                        ansiedad, mejoran la autoestima y la confianza en uno
+                        mismo, y fomentan el trabajo en equipo y la
+                        socialización.
                       </p>
                     </div>
                   </div>
@@ -154,14 +167,15 @@ const Projects = () => {
                   </div>
                   <div className="col-lg-6 valign">
                     <div className="content pt-0">
-                      <h4 className="wow color-font wow fadeIn">Eventos</h4>
+                      <h4 className="wow color-font wow fadeIn">ENDA</h4>
                       <p className="wow txt wow fadeIn" data-splitting>
-                        Del 25 al 27 de noviembre se llevará a cabo en el Predio
-                        Deportivo de la Universidad de Cuyo Ciudad de Mendoza,
-                        el 11° Congreso Argentino y 16° edición del ENDA
-                        Encuentro Nacional de Deportes Alternativos. Las y los
-                        mejores especialistas de nuestro país e invitados/as de
-                        Sudamérica darán vida a estos hermosos eventos
+                        Formo parte de la comisión de trabajo en el ENDA
+                        (Encuentro nacional de deportes alternativos). Donde
+                        cada año se reunen especialistas de nuestro pais y de
+                        Sudamerica. A traves de este encuentro de alta
+                        convocatoria promovemos el desarrollo y el despliegue de
+                        los deportes alternativos en las entidades educativas.
+                        Estamos planificando la edicion 2023 en Cordoba Capital.
                       </p>
                     </div>
                   </div>
@@ -173,11 +187,7 @@ const Projects = () => {
                 <div className="row">
                   <div className="col-lg-6">
                     <div className="img">
-                      <a
-                        href="https://elementoqi.es.tl/?fbclid=IwAR1HvQaOj2epfq-rhBLPQZKTYAv0DiAyzW13Ar4EyIcM98WjWFz0C7xkHaE"
-                        target="_blank"
-                        rel="noreferrer"
-                      >
+                      <a>
                         <img
                           style={{ marginBottom: "20px" }}
                           className="thumparallax-down wow fadeIn"
@@ -209,32 +219,46 @@ const Projects = () => {
                 </div>
               </div>
             )}
-            {section.urbanism === true && (
+            {section.teraphy === true && (
               <div className="container" style={{ marginTop: "60px" }}>
                 <div className="row">
                   <div className="col-lg-6">
                     <div className="img">
                       <img
-                        style={{ marginBottom: "20px" }}
+                        style={{ marginBottom: "20px", width: "470px" }}
                         className="thumparallax-down wow fadeIn"
-                        src="/img/urbanism.png"
+                        src="/img/blog/terapias.jpg"
                         alt=""
                       />
                     </div>
                   </div>
                   <div className="col-lg-6 valign">
                     <div className="content pt-0">
-                      <h4 className="wow color-font wow fadeIn">Urbanismo</h4>
+                      <h4 className="wow color-font wow fadeIn">
+                        Terapias fisicas
+                      </h4>
                       <p className="wow txt wow fadeIn" data-splitting>
-                        Our creative Ad agency is ranked among the finest in the
-                        US. We cultivate smart ideas for start-ups and seasoned
-                        players. Our creative Ad agency is ranked among the
-                        finest in the US. We cultivate smart ideas for start-ups
-                        and seasoned players. Our creative Ad agency is ranked
-                        among the finest in the US. We cultivate smart ideas for
-                        start-ups and seasoned players. Our creative Ad agency
-                        is ranked among the finest in the US. We cultivate smart
-                        ideas for start-ups and seasoned players.
+                        <ul>
+                          <li>
+                            -Técnicas de Masajes Orientales y Terapéuticos..
+                          </li>
+                          <li>
+                            -Ventosas -Tratamiento del Dolor -Rehabilitación
+                          </li>
+                          <li>
+                            -Reeducación y Corrección Postural -Auriculoterapia
+                          </li>
+                          <li>
+                            -Fitoterapia -Resultados desde la 1o Sesión
+                            -Orientación para Recuperación Activa fuera del
+                            consultorio
+                          </li>
+                          <li>
+                            -Asesoramiento permanente -Especialista en
+                            Deportistas
+                          </li>
+                          <li>-Psicoterapia Oriental</li>
+                        </ul>
                       </p>
                     </div>
                   </div>

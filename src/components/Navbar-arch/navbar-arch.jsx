@@ -12,7 +12,7 @@ const NavbarArch = ({ navbarRef, theme }) => {
             <img
               src={appData.lightLogo}
               alt="logo"
-              style={{ width: "300px" }}
+              style={{ width: "300px", marginLeft: "20px", marginTop: "20px" }}
             />
           </a>
         </Link>
@@ -78,18 +78,6 @@ const NavbarArch = ({ navbarRef, theme }) => {
             <li className="nav-item">
               <Link
                 className="nav-link"
-                to="po-arch"
-                spy={true}
-                smooth={true}
-                offset={50}
-                duration={500}
-              >
-                Participaciones
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link
-                className="nav-link"
                 to="contact-arch"
                 spy={true}
                 smooth={true}
@@ -98,6 +86,18 @@ const NavbarArch = ({ navbarRef, theme }) => {
               >
                 Contacto
               </Link>
+            </li>
+            <li className="nav-item">
+              <a
+                className="nav-link"
+                href="/proyectos"
+                spy={true}
+                smooth={true}
+                offset={50}
+                duration={500}
+              >
+                Proyectos
+              </a>
             </li>
           </ul>
         </div>

@@ -1,12 +1,10 @@
 import React from "react";
-import NavbarArch from "../../components/Navbar-arch/navbar-arch";
-import IntroWithSlider from "../../components/Intro-with-slider/intro-with-slider";
+import NavbarArch2 from "../../components/Navbar-arch/navbar-arch2";
 import Footer from "../../components/Footer/footer";
 import DarkTheme from "../../layouts/Dark";
-import WorksStyle3 from "../../components/Works-style3/works-style3";
-import AboutIntro from "../../components/About-intro";
-import ContactArch from "../../components/Contact-arch/contact-arch";
 
+import Projects from "../../components/Projects/Projects";
+import IntroWithSlider2 from "../../components/Intro-with-slider/intro-with-slider2";
 const Homepage1 = () => {
   const fixedSlider = React.useRef(null);
   const MainContent = React.useRef(null);
@@ -39,12 +37,10 @@ const Homepage1 = () => {
 
   return (
     <DarkTheme>
-      <NavbarArch navbarRef={navbarRef} theme="themeD" />
-      <IntroWithSlider sliderRef={fixedSlider} />
+      <NavbarArch2 navbarRef={navbarRef} theme="themeD" />
+      <IntroWithSlider2 sliderRef={fixedSlider} />
       <div ref={MainContent} className="main-content">
-        <AboutIntro />
-        <WorksStyle3 />
-        <ContactArch />
+        <Projects />
         <Footer />
       </div>
     </DarkTheme>

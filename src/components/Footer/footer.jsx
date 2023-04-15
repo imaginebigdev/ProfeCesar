@@ -25,7 +25,7 @@ const Footer = ({ hideBGCOLOR }) => {
                   <span className="icon pe-7s-call"></span>
                   <div className="cont">
                     <h6>Telefóno</h6>
-                    <p>+123456789</p>
+                    <p>+54 351 240 4222</p>
                   </div>
                 </li>
               </ul>
@@ -34,7 +34,7 @@ const Footer = ({ hideBGCOLOR }) => {
           <div className="col-lg-4">
             <div className="item md-mb50">
               <div className="title">
-                <h5>Participaciones</h5>
+                <h5>Proyectos</h5>
               </div>
               <ul>
                 <li>
@@ -88,13 +88,25 @@ const Footer = ({ hideBGCOLOR }) => {
                 <img src={appData.lightLogo} alt="" />
               </div>
               <div className="social">
-                <a href="https://www.facebook.com/elementoqi">
+                <a
+                  href="https://www.facebook.com/soyelprofecesar"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <i className="fab fa-facebook-f"></i>
                 </a>
-                <a href="https://www.instagram.com/cesarllaneselementoqi/">
+                <a
+                  href="https://www.instagram.com/soyelprofecesar/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <i className="fab fa-instagram"></i>
                 </a>
-                <a href="https://www.youtube.com/channel/UC4GuOIvk0LaeXPCnNr2adQg">
+                <a
+                  href="https://www.youtube.com/channel/UC4GuOIvk0LaeXPCnNr2adQg"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <i className="fab fa-youtube"></i>
                 </a>
               </div>

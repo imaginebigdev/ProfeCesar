@@ -97,7 +97,7 @@ h1 {
 
 h2 {
   font-size: 40px;
-  color: #69FE46;
+  color: #69fe46;
 }
 
 h3 {
@@ -110,7 +110,7 @@ h4 {
 
 h5 {
   font-size: 25px;
-  color: #69FE46;
+  color: #69fe46;
 }
 
 h6 {
@@ -159,13 +159,13 @@ span:hover {
     linear,
     left top,
     right top,
-    from(#69FE46),
-    color-stop(#69FE46),
+    from(#69fe46),
+    color-stop(#69fe46),
     to(#808080)
   );
-  background: -webkit-linear-gradient(left, #69FE46, #69FE46, #808080);
-  background: -o-linear-gradient(left, #69FE46, #69FE46, #808080);
-  background: linear-gradient(to right, #69FE46, #69FE46, #808080);
+  background: -webkit-linear-gradient(left, #69fe46, #69fe46, #808080);
+  background: -o-linear-gradient(left, #69fe46, #69fe46, #808080);
+  background: linear-gradient(to right, #69fe46, #69fe46, #808080);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -175,13 +175,13 @@ span:hover {
     linear,
     left top,
     right top,
-    from(#69FE46),
-    color-stop(#69FE46),
+    from(#69fe46),
+    color-stop(#69fe46),
     to(#808080)
   );
-  background: -webkit-linear-gradient(left, #69FE46, #69FE46, #808080);
-  background: -o-linear-gradient(left, #69FE46, #69FE46, #808080);
-  background: linear-gradient(to right, #69FE46, #69FE46, #808080);
+  background: -webkit-linear-gradient(left, #69fe46, #69fe46, #808080);
+  background: -o-linear-gradient(left, #69fe46, #69fe46, #808080);
+  background: linear-gradient(to right, #69fe46, #69fe46, #808080);
 }
 
 .line {
@@ -192,13 +192,13 @@ span:hover {
     linear,
     left top,
     right top,
-    from(#69FE46),
-    color-stop(#69FE46),
+    from(#69fe46),
+    color-stop(#69fe46),
     to(#808080)
   );
-  background: -webkit-linear-gradient(left, #69FE46, #69FE46, #808080);
-  background: -o-linear-gradient(left, #69FE46, #69FE46, #808080);
-  background: linear-gradient(to right, #69FE46, #69FE46, #808080);
+  background: -webkit-linear-gradient(left, #69fe46, #69fe46, #808080);
+  background: -o-linear-gradient(left, #69fe46, #69fe46, #808080);
+  background: linear-gradient(to right, #69fe46, #69fe46, #808080);
 }
 
 .line.top {
@@ -1041,13 +1041,13 @@ span:hover {
     linear,
     left top,
     right top,
-    from(#69FE46),
-    color-stop(#69FE46),
+    from(#69fe46),
+    color-stop(#69fe46),
     to(#808080)
   );
-  background: -webkit-linear-gradient(left, #69FE46, #69FE46, #808080);
-  background: -o-linear-gradient(left, #69FE46, #69FE46, #808080);
-  background: linear-gradient(to right, #69FE46, #69FE46, #808080);
+  background: -webkit-linear-gradient(left, #69fe46, #69fe46, #808080);
+  background: -o-linear-gradient(left, #69fe46, #69fe46, #808080);
+  background: linear-gradient(to right, #69fe46, #69fe46, #808080);
 }
 
 .pace.pace-inactive {
@@ -1296,7 +1296,7 @@ span:hover {
   width: 6px;
   height: 6px;
   z-index: 10000001;
-  background-color: #69FE46;
+  background-color: #69fe46;
   -webkit-transition: width 0.3s ease-in-out, height 0.3s ease-in-out,
     margin 0.3s ease-in-out, opacity 0.3s ease-in-out;
   -o-transition: width 0.3s ease-in-out, height 0.3s ease-in-out,
@@ -1310,7 +1310,7 @@ span:hover {
   margin-top: -35px;
   width: 70px;
   height: 70px;
-  background-color: #69FE46;
+  background-color: #69fe46;
   opacity: 0.3;
 }
 
@@ -1319,7 +1319,7 @@ span:hover {
   margin-top: -12px;
   width: 30px;
   height: 30px;
-  border: 1px solid #69FE46;
+  border: 1px solid #69fe46;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   z-index: 10000000;
@@ -1371,7 +1371,7 @@ span:hover {
   line-height: 44px;
   font-size: 13px;
   font-weight: 900;
-  color: #69FE46;
+  color: #69fe46;
   left: 0;
   top: 0;
   height: 44px;
@@ -1389,7 +1389,7 @@ span:hover {
 }
 
 .progress-wrap svg.progress-circle path {
-  stroke: #69FE46;
+  stroke: #69fe46;
   stroke-width: 4;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -1538,7 +1538,7 @@ span:hover {
 
 [data-overlay-dark="6"]:before,
 [data-overlay-light="6"]:before {
-  opacity: 0.0;
+  opacity: 0;
 }
 
 [data-overlay-dark="7"]:before,
@@ -1566,7 +1566,6 @@ span:hover {
 /* ====================== [ Start Heading ] ====================== */
 .sec-head {
   position: relative;
-  margin: 0 auto 80px;
 }
 
 .sec-head h6 {
@@ -1684,7 +1683,7 @@ span:hover {
 
 .butn.light {
   background: #808080;
-  color: #69FE46;
+  color: #69fe46;
 }
 
 .butn.light:hover {
@@ -1777,7 +1776,7 @@ span:hover {
 .navbar .navbar-nav .nav-link {
   font-size: 12px;
   font-weight: 500;
-  color: #69FE46;
+  color: #69fe46;
   padding: 15px 7px;
   margin: 10px 15px;
 }
@@ -2599,7 +2598,7 @@ span:hover {
   text-align: center;
   border-radius: 50%;
   border: 1px solid rgba(255, 255, 255, 0.05);
-  color: #69FE46;
+  color: #69fe46;
   font-size: 13px;
 }
 
@@ -5208,7 +5207,7 @@ span:hover {
 }
 
 .po-arch .filtering span.active {
-  color: #69FE46;
+  color: #69fe46;
 }
 
 .po-arch .filtering span:after {
@@ -8072,7 +8071,7 @@ footer .item li .sm-post p {
 
 footer .item li .sm-post .date {
   font-size: 12px;
-  color: #69FE46;
+  color: #69fe46;
 }
 
 footer .item li .subscribe {
@@ -8134,7 +8133,7 @@ footer .item .copy-right p {
 }
 
 footer .item .copy-right p a {
-  color: #69FE46;
+  color: #69fe46;
 }
 
 /* ====================== [ End Footer ] ====================== */
