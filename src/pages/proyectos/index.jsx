@@ -2,9 +2,9 @@ import React from "react";
 import NavbarArch2 from "../../components/Navbar-arch/navbar-arch2";
 import Footer from "../../components/Footer/footer";
 import DarkTheme from "../../layouts/Dark";
-
 import Projects from "../../components/Projects/Projects";
 import IntroWithSlider2 from "../../components/Intro-with-slider/intro-with-slider2";
+
 const Homepage1 = () => {
   const fixedSlider = React.useRef(null);
   const MainContent = React.useRef(null);
