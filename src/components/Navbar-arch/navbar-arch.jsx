@@ -35,7 +35,7 @@ const NavbarArch = ({ navbarRef, theme }) => {
             <li className="nav-item dropdown">
               <Link
                 className="nav-link"
-                spy={true}
+                to=""
                 onClick={() =>
                   window.scrollTo({
                     top: 0,
@@ -53,8 +53,7 @@ const NavbarArch = ({ navbarRef, theme }) => {
               <Link
                 className="nav-link"
                 to="about"
-                spy={true}
-                smooth={true}
+                smooth="true"
                 offset={50}
                 duration={500}
               >
@@ -65,8 +64,7 @@ const NavbarArch = ({ navbarRef, theme }) => {
               <Link
                 className="nav-link"
                 to="portfolio-cr section-padding pb-50"
-                spy={true}
-                smooth={true}
+                smooth="true"
                 offset={50}
                 duration={500}
               >
@@ -77,8 +75,7 @@ const NavbarArch = ({ navbarRef, theme }) => {
               <Link
                 className="nav-link"
                 to="contact-arch"
-                spy={true}
-                smooth={true}
+                smooth="true"
                 offset={50}
                 duration={500}
               >
@@ -89,8 +86,7 @@ const NavbarArch = ({ navbarRef, theme }) => {
               <a
                 className="nav-link"
                 href="/proyectos"
-                spy={true}
-                smooth={true}
+                smooth="true"
                 offset={50}
                 duration={500}
               >
