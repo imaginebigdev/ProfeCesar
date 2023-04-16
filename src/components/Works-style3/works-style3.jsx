@@ -3,7 +3,6 @@ import React from "react";
 import Link from "next/link";
 import initIsotope from "../../common/initIsotope";
 import ModalVideo from "react-modal-video";
-import PageHeader from "../Page-header/page-header";
 
 const WorksStyle3 = () => {
   const [isOpen, setOpen] = React.useState(false);
@@ -26,6 +25,7 @@ const WorksStyle3 = () => {
   }, []);
 
   const openVideo = (videoId) => {
+    event.preventDefault();
     setCurrentVideo(videoId);
     setOpen(true);
   };
@@ -50,7 +50,7 @@ const WorksStyle3 = () => {
                 <img
                   src="/img/portfolio/cr/cesar01.jpg"
                   alt="image"
-                  onClick={() => openVideo(videos[0].id)}
+                  onClick={(event) => openVideo(event, videos[0].id)}
                   style={{ cursor: "pointer" }}
                 />
               </div>
@@ -98,6 +98,7 @@ const WorksStyle3 = () => {
       </div>
       {typeof window !== "undefined" && (
         <ModalVideo
+          classNames="custom-video-modal"
           channel="youtube"
           autoplay
           isOpen={isOpen}

@@ -8138,6 +8138,14 @@ footer .item .copy-right p a {
 }
 
 /* ====================== [ End Footer ] ====================== */
+
+/* ====================== [ start Modal ] ====================== */
+.custom-video-modal .video-modal-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 /* ====================== [ Start Responsive ] ====================== */
 @media screen and (max-width: 991px) {
   .navbar .navbar-collapse.show-with-trans {
