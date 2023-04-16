@@ -19,16 +19,7 @@ const LoadingScreen = () => {
   return (
     <>
       <div className={`${appData.showLoading === true ? "showX" : "hideX"}`}>
-        <div className="loading">
-          <span>C</span>
-          <span>A</span>
-          <span>R</span>
-          <span>G</span>
-          <span>A</span>
-          <span>N</span>
-          <span>D</span>
-          <span>O</span>
-        </div>
+        <div className="loading"></div>
         <div id="preloader"></div>
       </div>
       {appData.showLoading ? (
